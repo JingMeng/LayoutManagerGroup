@@ -1,19 +1,19 @@
-package com.dingmouren.example.layoutmanagergroup.activity;
+﻿package com.dingmouren.example.layoutmanagergroup.activity;
 
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
 import android.support.v4.view.animation.FastOutSlowInInterpolator;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.transition.Explode;
 import android.transition.Slide;
 import android.view.Gravity;
@@ -33,8 +33,7 @@ import com.dingmouren.layoutmanagergroup.skidright.SkidRightLayoutManager;
 import com.dingmouren.layoutmanagergroup.skidright.SkidRightSnapHelper;
 
 /**
- * Created by 钉某人
- * github: https://github.com/DingMouRen
+ * Created by 閽夋煇浜? * github: https://github.com/DingMouRen
  * email: naildingmouren@gmail.com
  */
 
@@ -63,8 +62,7 @@ public class SkidRightActivity_1 extends AppCompatActivity {
     }
 
     /**
-     * 适配器
-     */
+     * 閫傞厤鍣?     */
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         private int[] imgs = {
                 R.mipmap.skid_right_1,
@@ -123,3 +121,4 @@ public class SkidRightActivity_1 extends AppCompatActivity {
         }
     }
 }
+

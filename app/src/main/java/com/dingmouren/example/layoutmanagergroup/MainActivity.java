@@ -1,12 +1,12 @@
-package com.dingmouren.example.layoutmanagergroup;
+﻿package com.dingmouren.example.layoutmanagergroup;
 
 import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
@@ -20,8 +20,7 @@ import com.dingmouren.example.layoutmanagergroup.fragment.SlideFragment;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Created by 钉某人
- * github: https://github.com/DingMouRen
+ * Created by 閽夋煇浜? * github: https://github.com/DingMouRen
  * email: naildingmouren@gmail.com
  */
 public class MainActivity extends AppCompatActivity {
@@ -29,9 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTvTitle;
     private Toolbar mToolbar;
     private FragmentManager mFragmentManager;
-    private List<Fragment> mFragments = new ArrayList<>();//存储所有的Fragment对象
-    private List<String> mManagerNames = new ArrayList<>();//存储与Fragment对应的LayoutManager的名称
-
+    private List<Fragment> mFragments = new ArrayList<>();//瀛樺偍鎵€鏈夌殑Fragment瀵硅薄
+    private List<String> mManagerNames = new ArrayList<>();//瀛樺偍涓嶧ragment瀵瑰簲鐨凩ayoutManager鐨勫悕绉?
     private Fragment mCurrentFragment;
 
     @Override
@@ -49,15 +47,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initFragments() {
-        EchelonFragment echelonFragment = new EchelonFragment();//梯形布局
+        EchelonFragment echelonFragment = new EchelonFragment();//姊舰甯冨眬
         mFragments.add(echelonFragment);
         mManagerNames.add("EchelonLayoutManager");
 
-        PickerFragment pickerFragment = new PickerFragment();//选择器布局
+        PickerFragment pickerFragment = new PickerFragment();//閫夋嫨鍣ㄥ竷灞€
         mFragments.add(pickerFragment);
         mManagerNames.add("PickerLayoutManager");
 
-        SlideFragment slideFragment = new SlideFragment();//滑动布局
+        SlideFragment slideFragment = new SlideFragment();//婊戝姩甯冨眬
         mFragments.add(slideFragment);
         mManagerNames.add("SlideLayoutManager");
 
@@ -110,3 +108,4 @@ public class MainActivity extends AppCompatActivity {
         mTvTitle.setText(mManagerNames.get(position));
     }
 }
+

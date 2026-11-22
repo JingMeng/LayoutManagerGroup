@@ -1,10 +1,10 @@
-package com.dingmouren.example.layoutmanagergroup.fragment;
+﻿package com.dingmouren.example.layoutmanagergroup.fragment;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,10 +20,9 @@ import com.dingmouren.layoutmanagergroup.echelon.EchelonLayoutManager;
 import org.w3c.dom.Text;
 
 /**
- * Created by 钉某人
- * github: https://github.com/DingMouRen
+ * Created by 閽夋煇浜? * github: https://github.com/DingMouRen
  * email: naildingmouren@gmail.com
- * 梯形布局
+ * 姊舰甯冨眬
  */
 public class EchelonFragment extends Fragment {
     private RecyclerView mRecyclerView;
@@ -52,13 +51,13 @@ public class EchelonFragment extends Fragment {
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
         private int[] icons = {R.mipmap.header_icon_1,R.mipmap.header_icon_2,R.mipmap.header_icon_3,R.mipmap.header_icon_4};
         private int[] bgs = {R.mipmap.bg_1,R.mipmap.bg_2,R.mipmap.bg_3,R.mipmap.bg_4};
-        private String[] nickNames = {"左耳近心","凉雨初夏","稚久九栀","半窗疏影"};
+        private String[] nickNames = {"宸﹁€宠繎蹇?,"鍑夐洦鍒濆","绋氫箙涔濇爛","鍗婄獥鐤忓奖"};
         private String[] descs = {
-                "回不去的地方叫故乡 没有根的迁徙叫流浪...",
-                "人生就像迷宫，我们用上半生找寻入口，用下半生找寻出口",
-                "原来地久天长，只是误会一场",
-                "不是故事的结局不够好，而是我们对故事的要求过多",
-                "只想优雅转身，不料华丽撞墙"
+                "鍥炰笉鍘荤殑鍦版柟鍙晠涔?娌℃湁鏍圭殑杩佸緳鍙祦娴?..",
+                "浜虹敓灏卞儚杩峰锛屾垜浠敤涓婂崐鐢熸壘瀵诲叆鍙ｏ紝鐢ㄤ笅鍗婄敓鎵惧鍑哄彛",
+                "鍘熸潵鍦颁箙澶╅暱锛屽彧鏄浼氫竴鍦?,
+                "涓嶆槸鏁呬簨鐨勭粨灞€涓嶅濂斤紝鑰屾槸鎴戜滑瀵规晠浜嬬殑瑕佹眰杩囧",
+                "鍙兂浼橀泤杞韩锛屼笉鏂欏崕涓芥挒澧?
         };
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -96,3 +95,4 @@ public class EchelonFragment extends Fragment {
     }
 
 }
+

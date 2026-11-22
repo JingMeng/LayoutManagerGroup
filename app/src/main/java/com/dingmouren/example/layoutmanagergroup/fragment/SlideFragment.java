@@ -1,10 +1,10 @@
-package com.dingmouren.example.layoutmanagergroup.fragment;
+﻿package com.dingmouren.example.layoutmanagergroup.fragment;
 
 import android.graphics.BlurMaskFilter;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -28,8 +28,7 @@ import java.util.List;
 
 
 /**
- * Created by 钉某人
- * github: https://github.com/DingMouRen
+ * Created by 閽夋煇浜? * github: https://github.com/DingMouRen
  * email: naildingmouren@gmail.com
  */
 
@@ -106,7 +105,7 @@ public class SlideFragment extends Fragment {
     }
 
     /**
-     * 向集合中添加数据
+     * 鍚戦泦鍚堜腑娣诲姞鏁版嵁
      */
     private void addData(){
         int[] icons = {R.mipmap.header_icon_1, R.mipmap.header_icon_2, R.mipmap.header_icon_3,
@@ -137,8 +136,7 @@ public class SlideFragment extends Fragment {
 
 
     /**
-     * 适配器
-     */
+     * 閫傞厤鍣?     */
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         @Override
@@ -177,3 +175,4 @@ public class SlideFragment extends Fragment {
         }
     }
 }
+

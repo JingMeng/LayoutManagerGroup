@@ -1,11 +1,11 @@
-package com.dingmouren.example.layoutmanagergroup.fragment;
+﻿package com.dingmouren.example.layoutmanagergroup.fragment;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,8 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 钉某人
- * github: https://github.com/DingMouRen
+ * Created by 閽夋煇浜? * github: https://github.com/DingMouRen
  * email: naildingmouren@gmail.com
  */
 
@@ -137,3 +136,4 @@ public class PickerFragment extends Fragment  {
         }
     }
 }
+

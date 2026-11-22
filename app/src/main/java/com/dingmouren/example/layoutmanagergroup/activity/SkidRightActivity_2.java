@@ -1,4 +1,4 @@
-package com.dingmouren.example.layoutmanagergroup.activity;
+﻿package com.dingmouren.example.layoutmanagergroup.activity;
 
 
 import android.annotation.TargetApi;
@@ -6,10 +6,10 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
+import androidx.annotation.Nullable;
+import androidx.core.view.ViewCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
@@ -21,8 +21,7 @@ import com.dingmouren.example.layoutmanagergroup.MyApplication;
 import com.dingmouren.example.layoutmanagergroup.R;
 
 /**
- * Created by 钉某人
- * github: https://github.com/DingMouRen
+ * Created by 閽夋煇浜? * github: https://github.com/DingMouRen
  * email: naildingmouren@gmail.com
  */
 
@@ -63,3 +62,4 @@ public class SkidRightActivity_2 extends AppCompatActivity {
         super.onBackPressed();
     }
 }
+

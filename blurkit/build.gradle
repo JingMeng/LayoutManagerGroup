@@ -3,12 +3,11 @@ apply plugin: 'com.android.library'
 
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 26
+        minSdk 19
+        targetSdk 34
         versionCode 1
         versionName "1.1.0"
         renderscriptTargetApi 25
@@ -19,9 +18,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
 }
 
 dependencies {
 }
+
+
 
